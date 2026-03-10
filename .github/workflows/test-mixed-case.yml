@@ -1,0 +1,11 @@
+name: Test Mixed Case Reference
+on:
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call composite action (mixed case - CybotTM)
+        uses: CybotTM/test-sub-action@main
+        with:
+          name: MixedCaseTest

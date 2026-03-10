@@ -1,0 +1,11 @@
+name: Test Lowercase Reference
+on:
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call composite action (lowercase - cybottm)
+        uses: cybottm/test-sub-action@main
+        with:
+          name: LowercaseTest
